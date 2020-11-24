@@ -1,0 +1,33 @@
+@font-face { 
+font-family: 'Bahnschrift Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Bahnschrift Regular'), url('../Polices/BAHNSCHRIFT 1.woff') format('woff');
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body {
+	background-color: lightblue;
+	font-family: 'Bahnschrift Regular';
+}
+
+#mainBlock {
+	min-height: 100%;
+}
+
+#title {
+	text-align: center;
+	margin-top: 2%;
+}
+
+#resultatDelHopital {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	margin: 3%;
+}

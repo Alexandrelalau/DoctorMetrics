@@ -1,0 +1,272 @@
+@font-face {
+font-family: 'Bahnschrift Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Bahnschrift Regular'), url('../Polices/BAHNSCHRIFT 1.woff') format('woff');
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body {
+	background-color: lightgrey;
+	font-family: 'Bahnschrift Regular';
+}
+
+#mainBlock {
+	min-height: 100%;
+}
+
+#corps {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: space-around;
+	height: auto;
+	margin: 2%;
+	background-color: white;
+}
+	
+#userList h3 {
+	align-self: center;
+	font-size: 1.5em;
+	margin: 5%;
+	width: 80%;
+}
+
+#userList {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+}
+
+#userList table {
+	align-self: center;
+	font-size: 1.4em;
+	width: 80%;
+	margin-bottom: 5%;
+	border : solid;
+	border-collapse: collapse;
+}
+
+#userList td th {
+	border: 1px solid black;
+}
+
+#userList th {
+	border: thin solid black;
+	text-align: center;
+}
+
+#userList td {
+	border: thin solid black;
+	text-align: center;
+}
+
+.boutonAdmin {
+	align-self: center;
+	background-color: grey;
+	border: none;
+	font-family: 'Bahnschrift Regular';
+	padding: 1%;
+	font-size: 1.3em;
+	border-radius: 5px;
+	width: 50%;
+	margin-bottom: 5%;
+}
+
+.boutonAdmin a {
+	text-decoration: none;
+	color: white;
+}
+
+.boutonAdmin a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+#addUser {
+	width: 50%;
+}
+
+#addUser h3 {
+	font-size: 1.5em;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#blocAdd {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	width: 80%;
+}
+
+#col1 {
+	width: 30%;
+	margin-right: 5%;
+}
+
+#col2 {
+	width: 30%;
+	margin-left: 5%;
+}
+
+#addUser input {
+	background-color: lightgray;
+	border: none;
+	font-family: 'Bahnschrift Regular';
+	padding: 1%;
+	font-size: 1.1em;
+}
+
+#addUserFooter input {
+	padding: 2%;
+	border-radius: 5px;
+}
+
+input {
+        padding: 2px;
+        border: 1px solid #CCC;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+}
+
+
+
+input:focus {
+        border-color: rgba(82, 168, 236, 0.75);
+        -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+        -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+        box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+
+
+.correct {
+        border-color: rgba(68, 191, 68, 0.75);
+}
+
+
+
+.correct:focus {
+        border-color: rgba(68, 191, 68, 0.75);
+        -moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+        -webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+        box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+
+
+
+.incorrect {
+        border-color: rgba(191, 68, 68, 0.75);
+}
+
+      
+
+.incorrect:focus {
+        border-color: rgba(191, 68, 68, 0.75);
+        -moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+        -webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+        box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+      
+
+}
+
+      
+
+.tooltip {
+        display: inline-block;
+        margin-left: 20px;
+        padding: 2px 4px;
+        border: 1px solid #555;
+        background-color: #CCC;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    
+}
+
+@media all and (max-width: 850px) {
+	
+	#logo {
+		align-self: left;
+		height : auto;
+		width: 100%; 
+		margin: 20%;
+	}
+	
+	nav {
+        text-align: left;
+		width: 50%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+		padding: 0px;
+		margin-left: 10%;
+    }
+
+    nav li {
+        padding-left: 4px;
+		font-size: 0.7em;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+    }
+    
+    nav a {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover {
+        border-bottom: 0;
+    }
+	
+	header button {
+		justify-content: left;
+		margin-right: 5%;
+		height: auto;
+
+		width: auto;
+		font-size: 0.7em;
+	}
+	
+	
+	
+	footer { 
+		width: 100%;
+		height: auto;
+	}
+	
+	#navFooter p { 
+		margin: 3%;
+		font-size: 0.9em;
+	}
+	
+	#navFooter a { 
+		margin: 3%;
+		font-size: 0.9em;
+	}
+	
+	#navFooter {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	footer #logoDoctorMetrics {
+		height : auto;
+		width: 15%; 
+		margin: 0px;
+		padding: 0px;
+	}
+}

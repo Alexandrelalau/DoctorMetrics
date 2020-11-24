@@ -1,0 +1,147 @@
+@font-face { 
+font-family: 'Bahnschrift Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Bahnschrift Regular'), url('../Polices/BAHNSCHRIFT 1.woff') format('woff');
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body {
+	background-color: lightgrey;
+	font-family: 'Bahnschrift Regular';
+}
+
+#mainBlock {
+	min-height: 100%;
+}
+
+#corps {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	margin: 2%;
+	background-color: white;
+	padding-bottom: 5%;
+}
+
+#corps h1 {
+	margin: 3%;
+}
+
+#warning {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 2%;
+	background-color: red;
+	color: white;
+}
+
+#corps p {
+	font-size: 1.2em;
+}
+
+input {
+	background-color: lightgray;
+	border: none;
+	font-family: 'Bahnschrift Regular';
+	padding: 1%;
+	font-size: 1.1em;
+}
+
+#bouton {
+	border-radius: 5px;
+}
+
+@media all and (max-width: 850px) {
+	
+	#logo {
+		align-self: left;
+		height : auto;
+		width: 100%; 
+		margin: 20%;
+	}
+	
+	nav {
+        text-align: left;
+		width: 50%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+		padding: 0px;
+		margin-left: 10%;
+    }
+
+    nav li {
+        padding-left: 4px;
+		font-size: 0.7em;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+    }
+    
+    nav a {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover {
+        border-bottom: 0;
+    }
+	
+	header button {
+		justify-content: left;
+		margin-right: 5%;
+		height: auto;
+
+		width: auto;
+		font-size: 0.7em;
+	}
+	
+	#corps {
+		min-height: 100%;
+	}
+
+	#corps p {
+		font-size: 1em;
+	}	
+
+	#corps button {
+		font-size: 1em;
+	}	
+	
+	footer { 
+		width: 100%;
+		height: auto;
+	}
+	
+	#navFooter p { 
+		margin: 3%;
+		font-size: 0.9em;
+	}
+	
+	#navFooter a { 
+		margin: 3%;
+		font-size: 0.9em;
+	}
+	
+	#navFooter {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	footer #logoDoctorMetrics {
+		height : auto;
+		width: 15%; 
+		margin: 0px;
+		padding: 0px;
+	}
+}

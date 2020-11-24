@@ -1,0 +1,210 @@
+@font-face {
+font-family: 'Bahnschrift Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Bahnschrift Regular'), url('../Polices/BAHNSCHRIFT 1.woff') format('woff');
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+body {
+	background-color: lightgrey;
+	font-family: 'Bahnschrift Regular';
+}
+
+#mainBlock {
+	min-height: 100%;
+}
+
+#corps {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	margin: 2%;
+	background-color: white;
+}
+
+.blocUser {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 96%;
+	margin: 2%;
+}
+
+.userName {
+	color: white;
+	background-color: grey;
+	width: 47%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+.parameters {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: black;
+	background-color: lightgrey;
+	width: 47%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+.frequency {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.score {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.reaction {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: lightcoral;
+	width: 50%;
+	align-self: center;
+}
+
+.son {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: lightgoldenrodyellow;
+	width: 50%;
+	align-self: center;
+}
+
+.stress {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: lightgreen;
+	width: 50%;
+	align-self: center;
+}
+
+.couleur {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: lightblue;
+	width: 50%;
+	align-self: center;
+	margin-bottom: 3%;
+}
+
+.frequence {
+	width: 10%;
+}
+
+.scoreReac{
+	width: 10%;
+}
+
+.scoreSon {
+	width: 10%;
+}
+
+.scoreStress {
+	width: 10%;
+}
+
+.scoreCouleur {
+	width: 10%;
+}
+
+@media all and (max-width: 850px) {
+	
+	#logo {
+		align-self: left;
+		height : auto;
+		width: 100%; 
+		margin: 20%;
+	}
+	
+	nav {
+        text-align: left;
+		width: 50%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+		padding: 0px;
+		margin-left: 10%;
+    }
+
+    nav li {
+        padding-left: 4px;
+		font-size: 0.7em;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+    }
+    
+    nav a {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover {
+        border-bottom: 0;
+    }
+	
+	header button {
+		justify-content: left;
+		margin-right: 5%;
+		height: auto;
+
+		width: auto;
+		font-size: 0.7em;
+	}
+	
+	#corps {
+		min-height: 100%;
+	}
+	
+	
+	
+	footer { 
+		width: 100%;
+		height: auto;
+	}
+	
+	#navFooter p { 
+		margin: 3%;
+		font-size: 0.9em;
+	}
+	
+	#navFooter a { 
+		margin: 3%;
+		font-size: 0.9em;
+	}
+	
+	#navFooter {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	footer #logoDoctorMetrics {
+		height : auto;
+		width: 15%; 
+		margin: 0px;
+		padding: 0px;
+	}
+}
